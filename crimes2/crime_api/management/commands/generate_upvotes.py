@@ -16,7 +16,7 @@ class Command(BaseCommand):
             self.stdout.write(self.style.ERROR('No CrimeReport records found. Please populate the database first.'))
             return
 
-        # Generate 1000 fake upvotes
+        # Generate 330099 fake upvotes
         for _ in range(330099):
             # Get a random CrimeReport ID
             random_id = random.choice(crime_report_ids)
@@ -30,4 +30,4 @@ class Command(BaseCommand):
                 badge_number=fake.random_number(digits=5)
             )
 
-        self.stdout.write(self.style.SUCCESS('Successfully generated 1000 upvotes'))
+        self.stdout.write(self.style.SUCCESS('Successfully generated 330099 upvotes'))
